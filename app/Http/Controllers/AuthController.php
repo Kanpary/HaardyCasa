@@ -23,7 +23,7 @@ class AuthController extends Controller {
     }
 
     public function google(Request $r) {
-        $client_id = '1004954149418-hrb9gco9qbruqn1ja7u2i9hr16v2f9aa.apps.googleusercontent.com';
+        $client_id = env('GOOGLE_CLIENT_ID', '');
         $client_secret = env('GOOGLE_CLIENT_SECRET', '');
         $redirect_uri = 'https://sweetx.site';
 
